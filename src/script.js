@@ -4,6 +4,7 @@ const alarm_task = {
 };
 (async () => {
     'use strict';
+    const date = document.getElementById('date').textContent = new Date().toLocaleDateString('ja-JP');
     const timer = document.getElementById('timer');
     const btn = document.getElementById('btn_create')
     setInterval(Sync,1000 - new Date().getUTCMilliseconds());
