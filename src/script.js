@@ -6,7 +6,8 @@ const alarm_task = {
     'use strict';
     const date = document.getElementById('date').textContent = new Date().toLocaleDateString('ja-JP');
     const timer = document.getElementById('timer');
-    const btn = document.getElementById('btn_create')
+    const btn = document.getElementById('btn_create');
+    timer.textContent = new Date().toLocaleTimeString('ja-JP');
     setInterval(Sync,1000 - new Date().getUTCMilliseconds());
     Init();
     btn.addEventListener("click",Create);
