@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./src/style.css">
-   </head>
-   <body>
-      <h1 id="timer"></h1>
-      <script src="src/script.js"></script>
-   </body>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./src/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+</head>
+
+<body>
+   <h1 id="timer"></h1>
+   <article id="pickers">
+      <input id="date-pick"></input>
+      <input id="time-pick"></input>
+      <a class="submit" id="btn_create">作成</a>
+   </article>
+   <article id="tasks">
+      <table border="1">
+         <tbody id="summary">
+         </tbody>
+      </table>
+   </article>
+   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+   <script src="src/script.js"></script>
+
+</body>
+
 </html>
